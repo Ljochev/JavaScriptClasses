@@ -44,7 +44,7 @@ var myArray = [
   [1, 2, 3, 4, 5],
   { name: "Marko" },
 ]
-console.log(myArray)
+// console.log(myArray)
 
 // var, let, const
 
@@ -70,8 +70,38 @@ let sum = num1 + num2
 let name2 = "Marko"
 let surname2 = "Petkovski"
 let fullName = name2 + " " + surname2
-console.log(name2, surname2)
+// console.log(name2, surname2)
 
 let randomNum1 = 100
 let randomNum2 = 10
-console.log(randomNum1 / randomNum2)
+// console.log(randomNum1 / randomNum2)
+
+// boolean algebra in JS
+
+// logical operators:
+// && (Logical AND)
+let bool1 = true
+let bool2 = true
+let resultBool = bool1 && bool2
+console.log(resultBool, "BOOL")
+
+// || (Logical OR)
+let x = true
+let y = false
+let resultOR = x || y
+console.log(resultOR)
+
+// ! (Logical NOT)
+let xyz = true
+console.log(!xyz)
+
+// ==, ===, !=
+let bigNumber = 10000
+let smallNumber = "10000"
+console.log(bigNumber === smallNumber)
+
+// >, <, >=, <=
+let ranNum = 10
+let ranNum2 = 90
+let ranResult = ranNum <= ranNum2
+console.log(ranResult)
