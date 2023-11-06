@@ -1,4 +1,20 @@
-1. Да се напише функција која што ќе има еден параметар number која што ќе користи console.log за печатење во конзола со следниве услови. За броеви деливи со 3, да го отпечати зборот „Fizz“ за броеви деливи со 5 (а не со 3), да се отпечати зборот „Buzz“, а за броеви кои се деливи и со 3 и со 5 да се испечати зборот “FizzBuzz”. Доколку внесениот аргумент не исполнува ниту еден од овие услови, да се испечати самиот број во конзола.
+1. Декларирајте три променливи: hasCoffee, hasTea и hasMilk.
+   Доделете им булови ги следните вредности за да се покаже дали ученикот го има секој соодветен пијалок:
+
+let hasCoffee = true;
+let hasTea = false;
+let hasMilk = true;
+
+Напишете булови изрази користејќи И(&&), ИЛИ(||) и негациски оператори(!=) за да одговорите на следниве прашања:
+
+a. Does the student have either tea or milk?
+b. Does the student have both coffee and tea?
+c. Is it true that the student doesn't have tea?
+d. Does the student have either coffee or milk, but not both?
+e. Is it true that the student has either tea and milk, or coffee and tea?
+f. Does the student have neither coffee nor tea?
+
+На крај да се испечатат резултатите.
 
 2. Во продолжение ви се дадени 7 променливи со нумерички вредности:
    const num1 = 10;
