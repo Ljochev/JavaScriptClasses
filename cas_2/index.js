@@ -70,4 +70,25 @@ printMyNumber(90)
 
 // Different types of Functions
 
+// function declaration
+function greet(name) {
+  return `Hello ${name}`
+  //   return "Hello " + name
+}
+
+console.log(greet("Stefan"))
+
+// function expression
+let add = function (x, y) {
+  return x + y
+}
+
+console.log(add(3, 4))
+
+// arrow function
+let greet2 = (name) => {
+  return `Hello ${name}`
+}
+
+console.log(greet2("Marko"))
 // Working with complex data types: Arrays and Objects
