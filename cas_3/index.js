@@ -105,8 +105,48 @@ console.log(book["year"])
 
 let randomNumber = 101
 
-console.log("This is random number", randomNumber)
-console.log("This is random number " + randomNumber)
-console.log(`This is my random number ${randomNumber}`)
+// console.log("This is random number", randomNumber)
+// console.log("This is random number " + randomNumber)
+// console.log(`This is my random number ${randomNumber}`)
 
 // Loops in JavaScript
+
+// for loop
+for (let i = 0; i < 5; i++) {
+  console.log(i)
+}
+
+// let randomArray = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+// for (let i = 0; i < randomArray.length; i++) {
+//   console.log(randomArray[i])
+// }
+
+// while loop
+
+let count = 0
+
+while (count < 5) {
+  console.log("Hello World")
+  if (count === 2) {
+    break
+  }
+  count++
+}
+
+// do/while
+
+let randomNum = 1
+let sum = 0
+
+do {
+  //   sum += randomNum
+  //   randomNum++
+  console.log("Hello")
+  randomNum++
+} while (randomNum < 6)
+
+console.log(sum)
+
+// 1
+// 3
+// 6 + 4 = 10
