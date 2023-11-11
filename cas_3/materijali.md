@@ -156,7 +156,7 @@ Both arrays and objects can contain other arrays or objects, allowing for comple
 
 ## Different types of for loops in JavaScript
 
-## Normal For Loop:
+### Normal For Loop:
 
 The normal for loop is used when you know the exact number of iterations you want to perform. It consists of three parts: initialization, condition, and iteration.
 The normal for loop allows you to execute a block of code a specified number of times.
@@ -166,7 +166,7 @@ for (let i = 0; i < 5; i++) {
 console.log(i);
 }
 
-## For-In Loop:
+### For-In Loop:
 
 The for-in loop is used to iterate over the properties of an object. It works with enumerable properties and is suitable for objects and arrays. The for-in loop iterates over the enumerable properties of an object, providing access to each property's key.
 Example:
@@ -180,7 +180,7 @@ for (let key in person) {
 console.log(key + ': ' + person[key]);
 }
 
-## For-Of Loop:
+### For-Of Loop:
 
 The for-of loop is used to iterate over iterable objects like arrays, strings, and other collection-like structures.
 The for-of loop provides an easy way to iterate over elements in an iterable, giving direct access to their values.
