@@ -1,6 +1,6 @@
-# Starting with JavaScript?
+# Starting with JavaScript
 
-## What is JavaScript
+## What is JavaScript?
 
 JavaScript is a versatile programming language primarily used for adding interactivity to websites. It allows developers to create dynamic, interactive, and user-friendly web applications. Here are some key aspects of JavaScript:
 
@@ -26,11 +26,11 @@ console and alert in JS
 console.log(“Hello World!”)
 alert(“Hey there!”)
 
-### Data types
+## Data types
 
 In JavaScript, data types define the kind of values a variable can hold. They play a crucial role in how your code behaves and interacts with data. Here are the primary data types in JavaScript:
 
-- Primitive Data Types:
+### Primitive Data Types:
 
 Number: Represents both integer and floating-point numbers. Examples: 5, 3.14.
 
@@ -83,9 +83,9 @@ Choosing Between Variables and Constants:
 
 Use a variable when you expect the value to change during the execution of your program. Use a constant when you want to ensure a value remains fixed.
 
-var, let, and const: Understanding Scope in JavaScript
+### var, let, and const: Understanding Scope in JavaScript
 
-var:
+- var:
 
 var is the oldest way to declare variables in JavaScript.
 It has function scope, which means it is visible throughout the entire function in which it's defined, regardless of block scope. If you declare a variable with var inside a block (like an if statement or loop), it will still be visible outside of that block.
@@ -98,7 +98,7 @@ var name = "John";
 console.log(name); // Output: "John"
 }
 
-let:
+- let:
 
 let was introduced in ES6 (ECMAScript 2015) to address some of the issues with var.
 It has block scope, which means it is only visible within the block it's defined in (like an if statement or loop).
@@ -112,7 +112,7 @@ let name = "John";
 console.log(name); // Error: name is not defined
 }
 
-const:
+- const:
 
 const is also introduced in ES6 and is used to declare constants.
 Like let, it also has block scope. A constant cannot be reassigned once it's defined. However, if it's an object or array, the properties or elements can still be modified.
@@ -235,7 +235,7 @@ Comparison Operators in JavaScript: == vs ===
 
 In JavaScript, the comparison operators == and === are used to compare values. However, they have different behaviors:
 
-== (Equal Operator):
+- == (Equal Operator):
 
 The == operator checks if two values are equal after converting them to a common type.
 It performs type coercion, which means it tries to make both values of the same type before comparing.
