@@ -265,14 +265,12 @@ The while loop executes a block of code while a specified condition is true. The
 Example:
 
 ```
-
 let count = 0;
 
 while (count < 5) {
 console.log(count);
 count++;
 }
-
 ```
 
 ### Do/While Loop:
@@ -282,7 +280,6 @@ The do/while loop is similar to the while loop, but it guarantees that the block
 Example:
 
 ```
-
 let randomNum = 1
 let sum = 0
 
@@ -292,7 +289,6 @@ randomNum++
 } while (randomNum < 5)
 
 console.log("Total sum:", sum)
-
 ```
 
 ### Using Break Statement:
@@ -302,7 +298,6 @@ The break statement is used to exit a loop prematurely. It can be used in both w
 Example:
 
 ```
-
 let i = 0;
 
 while (i < 10) {
@@ -312,9 +307,4 @@ break; // Exit the loop when i reaches 5
 }
 i++;
 }
-
-```
-
-```
-
 ```
