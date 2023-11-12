@@ -7,16 +7,21 @@ Conditions in JavaScript allow you to control the flow of your program based on 
 The if statement executes a block of code if a specified condition is true.
 
 Example:
+
+```
 let num = 10;
 
 if (num > 5) {
 console.log("The number is greater than 5");
 }
+```
 
 2. else-if Statement:
    The else-if statement provides an alternative condition to check if the initial condition is false.
 
 Example:
+
+```
 let num = 3;
 
 if (num > 5) {
@@ -26,11 +31,14 @@ console.log("The number is equal to 5");
 } else {
 console.log("The number is less than 5");
 }
+```
 
 3. else Statement:
    The else statement specifies code to be executed if the condition in the if statement is false.
 
 Example:
+
+```
 let num = 3;
 
 if (num > 5) {
@@ -38,12 +46,15 @@ console.log("The number is greater than 5");
 } else {
 console.log("The number is not greater than 5");
 }
+```
 
 ### Switch Statement:
 
 The switch statement is used to perform different actions based on different conditions. It evaluates an expression and executes the corresponding code block.
 
 Example:
+
+```
 let day = "Monday";
 
 switch (day) {
@@ -56,6 +67,7 @@ break;
 default:
 console.log("It's another day");
 }
+```
 
 These conditional statements are essential tools for building logic and making decisions in your programs. They allow you to create dynamic and responsive code that can handle different scenarios.
 
@@ -65,10 +77,12 @@ A function in JavaScript is a block of reusable code that performs a specific ta
 
 Example: Here's a simple function that adds two numbers together:
 
+```
 function addNumbers(num1, num2) {
 let sum = num1 + num2;
 return sum;
 }
+```
 
 In this example:
 
@@ -81,8 +95,10 @@ In this example:
 How to Use:
 You can call this function by providing two numbers as arguments:
 
+```
 let result = addNumbers(5, 3);
 console.log(result); // Output: 8
+```
 
 Here, addNumbers(5, 3) calls the function with 5 as num1 and 3 as num2. The function computes the sum and returns 8, which is then stored in the result variable.
 
