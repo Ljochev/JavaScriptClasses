@@ -22,9 +22,11 @@ JavaScript is a versatile programming language primarily used for adding interac
 
 - Prototype-Based Object-Oriented: JavaScript is object-oriented, but it uses a prototype-based model rather than a classical one.
 
+```
 console and alert in JS
 console.log(“Hello World!”)
 alert(“Hey there!”)
+```
 
 ## Data types
 
@@ -62,11 +64,11 @@ Variables are like containers that store data in a program. They allow us to ass
 
 In JavaScript, you can declare a variable using the let keyword:
 
-let age = 30;
+`let age = 30;`
 
 Here, age is the variable name, and 30 is the value stored in the variable. You can change the value of a variable:
 
-age = 31; // Now 'age' is 31
+`age = 31; // Now 'age' is 31`
 
 - Constants:
 
@@ -74,11 +76,12 @@ Constants are similar to variables, but once you assign a value to a constant, y
 
 In JavaScript, you can declare a constant using the const keyword:
 
-const PI = 3.14;
+`const PI = 3.14;`
 
 Once you've assigned a value to PI, you can't change it:
 
-PI = 3.14159; // Error! You can't reassign a constant.
+`PI = 3.14159; // Error! You can't reassign a constant.`
+
 Choosing Between Variables and Constants:
 
 Use a variable when you expect the value to change during the execution of your program. Use a constant when you want to ensure a value remains fixed.
@@ -91,26 +94,31 @@ var is the oldest way to declare variables in JavaScript.
 It has function scope, which means it is visible throughout the entire function in which it's defined, regardless of block scope. If you declare a variable with var inside a block (like an if statement or loop), it will still be visible outside of that block.
 
 Example:
+
+```
 function exampleFunction() {
 if (true) {
 var name = "John";
 }
 console.log(name); // Output: "John"
 }
+```
 
 - let:
 
 let was introduced in ES6 (ECMAScript 2015) to address some of the issues with var.
-It has block scope, which means it is only visible within the block it's defined in (like an if statement or loop).
-Using let helps prevent issues caused by variable hoisting (a behavior of var that can lead to unexpected results).
+It has block scope, which means it is only visible within the block it's defined in (like an if statement or loop). Using let helps prevent issues caused by variable hoisting (a behavior of var that can lead to unexpected results).
 
 Example:
+
+```
 function exampleFunction() {
 if (true) {
 let name = "John";
 }
 console.log(name); // Error: name is not defined
 }
+```
 
 - const:
 
@@ -118,11 +126,15 @@ const is also introduced in ES6 and is used to declare constants.
 Like let, it also has block scope. A constant cannot be reassigned once it's defined. However, if it's an object or array, the properties or elements can still be modified.
 
 Example:
+
+```
 const PI = 3.14;
 PI = 3.14159; // Error: Assignment to constant variable.
 
 const person = { name: "John" };
 person.name = "Jane"; // This is allowed.
+```
+
 When to Use:
 
 Use const when the value should not be changed.
@@ -141,10 +153,12 @@ A function in JavaScript is a block of reusable code that performs a specific ta
 
 Example: Here's a simple function that adds two numbers together:
 
+```
 function addNumbers(num1, num2) {
 let sum = num1 + num2;
 return sum;
 }
+```
 
 In this example:
 
@@ -157,8 +171,10 @@ In this example:
 How to Use:
 You can call this function by providing two numbers as arguments:
 
+```
 let result = addNumbers(5, 3);
 console.log(result); // Output: 8
+```
 
 Here, addNumbers(5, 3) calls the function with 5 as num1 and 3 as num2. The function computes the sum and returns 8, which is then stored in the result variable.
 
@@ -173,47 +189,68 @@ Boolean algebra in JavaScript involves working with logical values true and fals
 - && (Logical AND): This operator returns true if both operands are true.
 
 Example:
+
+```
 let x = true;
 let y = false;
 let result = x && y; // result will be false
+```
 
 - || (Logical OR): This operator returns true if at least one of the operands is true.
 
 Example:
+
+```
 let x = true;
 let y = false;
 let result = x || y; // result will be true
+```
 
 - ! (Logical NOT): This operator returns the opposite of the given boolean value.
 
+Example
+
+```
 let x = true;
 let result = !x; // result will be false
+```
 
 Comparison Operators:
 
 - == (Equal to): Checks if two values are equal.
 
 Example:
+
+```
 let x = 5;
 let y = 5;
 let result = x == y; // result will be true
+```
 
 - != (Not equal to): Checks if two values are not equal.
 
 Example:
+
+```
 let x = 5;
 let y = 10;
 let result = x != y; // result will be true
+```
 
 - > (Greater than), < (Less than), >= (Greater than or equal to), <= (Less than or equal to): These operators are used for numerical comparisons.
 
 Example:
+
+```
 let x = 5;
 let y = 10;
 let result1 = x > y; // result1 will be false
 let result2 = x < y; // result2 will be true
+```
 
 Example:
+
+```
 let isRainy = true;
 let isCold = false;
 
@@ -224,6 +261,7 @@ console.log("Wear a coat and take an umbrella");
 } else {
 console.log("Enjoy the weather");
 }
+```
 
 In this example, the program makes decisions based on the boolean variables isRainy and isCold. Depending on their values, different messages will be printed.
 
@@ -241,9 +279,12 @@ The == operator checks if two values are equal after converting them to a common
 It performs type coercion, which means it tries to make both values of the same type before comparing.
 
 Example:
+
+```
 let x = 5;
 let y = "5";
 console.log(x == y); // true
+```
 
 In this example, x and y are considered equal because the == operator performs type coercion and converts the string "5" to a number before comparison.
 
@@ -252,9 +293,12 @@ In this example, x and y are considered equal because the == operator performs t
 The === operator checks if two values are equal without performing type coercion. It compares both the value and the data type, ensuring that both are identical.
 
 Example:
+
+```
 let x = 5;
 let y = "5";
 console.log(x === y); // false
+```
 
 In this example, x and y are considered not equal because the === operator doesn't perform type coercion and the data types are different.
 
@@ -279,6 +323,8 @@ The basic syntax of the typeof operator is: typeof operand
 It takes one operand (value or expression) and returns a string representing its type.
 
 Example:
+
+```
 let x = 10;
 let y = "Hello";
 let z = true;
@@ -286,3 +332,4 @@ let z = true;
 console.log(typeof x); // Output: "number"
 console.log(typeof y); // Output: "string"
 console.log(typeof z); // Output: "boolean"
+```
