@@ -147,39 +147,6 @@ Minimize the use of var as it may lead to unintended issues due to its function 
 
 - Mathematical operations: +, -, \*, /, +=, -=, ==, ===
 
-### Functions in JavaScript:
-
-A function in JavaScript is a block of reusable code that performs a specific task. It allows you to group a set of statements together and give it a name. Functions can take parameters (inputs) and return a value (output).
-
-Example: Here's a simple function that adds two numbers together:
-
-```
-function addNumbers(num1, num2) {
-let sum = num1 + num2;
-return sum;
-}
-```
-
-In this example:
-
-- function is the keyword that declares a function.
-- addNumbers is the name of the function.
-- (num1, num2) are the parameters the function accepts. They act like variables within the function.
-- let sum = num1 + num2; is the code that adds the two numbers together.
-- return sum; specifies what the function should output.
-
-How to Use:
-You can call this function by providing two numbers as arguments:
-
-```
-let result = addNumbers(5, 3);
-console.log(result); // Output: 8
-```
-
-Here, addNumbers(5, 3) calls the function with 5 as num1 and 3 as num2. The function computes the sum and returns 8, which is then stored in the result variable.
-
-This is a basic example, but functions can range from simple tasks to complex operations. They are a fundamental building block in JavaScript programming and are used extensively in any substantial codebase.
-
 ### Boolean Algebra in JavaScript:
 
 Boolean algebra in JavaScript involves working with logical values true and false. These values are used to control the flow of a program based on conditions.
