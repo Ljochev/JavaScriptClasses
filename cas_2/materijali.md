@@ -103,3 +103,66 @@ console.log(result); // Output: 8
 Here, addNumbers(5, 3) calls the function with 5 as num1 and 3 as num2. The function computes the sum and returns 8, which is then stored in the result variable.
 
 This is a basic example, but functions can range from simple tasks to complex operations. They are a fundamental building block in JavaScript programming and are used extensively in any substantial codebase.
+
+### Different types of Functions
+
+**Function declarations:**
+Function declarations define a function with a specified name. They are hoisted to the top of their scope, which means you can call them before they are defined in the code.
+
+Example:
+
+```
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+let message = greet("John"); // Output: "Hello, John!"
+```
+
+**Function Expression:**
+Function expressions define a function as part of a larger expression or as an anonymous function. They are not hoisted, so you can only call them after they are defined.
+
+Example:
+
+```
+let add = function(x, y) {
+  return x + y;
+}
+
+let result = add(3, 4); // result will be 7
+```
+
+**Arrow Functions (ES6):**
+Arrow functions provide a more concise syntax for defining functions. They automatically bind this to the surrounding context.
+
+Example:
+
+```
+let multiply = (x, y) => x * y;
+
+let product = multiply(2, 5); // product will be 10
+```
+
+**IIFE (Immediately Invoked Function Expression):**
+These are self-invoking functions that run as soon as they are defined.
+
+Example:
+
+```
+(function() {
+  console.log("This function is immediately invoked.");
+})();
+```
+
+**Higher-Order Functions(HOF):**
+These are functions that can take other functions as arguments or return functions as values.
+
+Example:
+
+```
+function applyOperation(x, y, operation) {
+  return operation(x, y);
+}
+
+let result = applyOperation(3, 4, (a, b) => a + b); // result will be 7
+```
