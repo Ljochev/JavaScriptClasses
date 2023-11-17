@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAS 6</title>
+  </head>
+  <body>
+    <h1 id="title">Some random title</h1>
+    <p class="paragraph">Paragraph 1</p>
+    <p class="paragraph">Paragraph 2</p>
+    <p class="paragraph">Paragraph 3</p>
+
+    <div id="container"></div>
+  </body>
+
+  <script>
+    // Accessing Elements
+    const title = document.getElementById("title")
+    console.log(title)
+
+    const paragraphElements = document.getElementsByClassName("paragraph")
+    console.log(paragraphElements, "PARAGRAPHS")
+
+    // way to loop through HTMLCollection
+    const paragraphArray = Array.from(paragraphElements)
+    console.log(paragraphArray, "PARAGPRAPH ARRAY")
+
+    const secondParagraph = document.getElementsByClassName("paragraph")[1]
+    console.log(secondParagraph)
+
+    let elementsByTag = document.getElementsByTagName("p")
+    console.log(elementsByTag)
+
+    const elements = document.querySelectorAll(".paragraph")
+    console.log(elements)
+
+    const titleElement = document.querySelector("#title")
+    console.log(titleElement)
+
+    elements.forEach((el) => {
+      el.style.color = "red"
+      el.style.fontSize = "25px"
+    })
+
+    // one way
+    const thirdElement = elements[2]
+    console.log(thirdElement)
+    thirdElement.style.color = "green"
+
+    // another way
+    elements[2].style.color = "green"
+
+    // Creating DOM Nodes
+    const newParagraph = document.createElement("p")
+    console.log(newParagraph)
+
+    newParagraph.textContent = "Created Paragraph"
+
+    newParagraph.setAttribute("id", "important-paragraph")
+
+    document.body.appendChild(newParagraph)
+
+    // Adding Elements to the DOM
+    const container = document.getElementById("container")
+    const newDiv = document.createElement("div")
+    container.appendChild(newDiv)
+
+    const newImgElement = document.createElement("img")
+    container.insertBefore(newImgElement, newDiv)
+
+    // Modifying the DOM Tree
+    const elementToRemove = document.getElementById("important-paragraph")
+    const parentElement = elementToRemove.parentNode
+    parentElement.removeChild(elementToRemove)
+  </script>
+</html>
