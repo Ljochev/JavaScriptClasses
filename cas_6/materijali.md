@@ -124,20 +124,20 @@ DOM manipulation refers to the process of programmatically interacting with the 
 
 Example:
 
-// Creating a new paragraph element
+Creating a new paragraph element
 
 ```
 const paragraph = document.createElement('p');
 ```
 
-// Setting content and attributes
+Setting content and attributes
 
 ```
 paragraph.textContent = 'This is a dynamically created paragraph.';
 paragraph.setAttribute('class', 'dynamic-paragraph');
 ```
 
-// Appending to the body
+Appending to the body
 
 ```
 document.body.appendChild(paragraph);
@@ -151,27 +151,27 @@ Adding elements to the DOM is a fundamental part of web development. We'll explo
 
 Example:
 
-// Adding elements to an existing container
+Adding elements to an existing container
 
 ```
 const container = document.getElementById('container');
 ```
 
-// Using appendChild
+Using appendChild
 
 ```
 const newDiv = document.createElement('div');
 container.appendChild(newDiv);
 ```
 
-// Using insertBefore
+Using insertBefore
 
 ```
 const anotherDiv = document.createElement('div');
 container.insertBefore(anotherDiv, newDiv);
 ```
 
-// Using innerHTML to add content
+Using innerHTML to add content
 
 ```
 container.innerHTML += '<p>This is additional content using innerHTML.</p>';
@@ -187,20 +187,20 @@ To keep our web pages dynamic, we must be able to modify the existing DOM struct
 
 Example
 
-// Modifying the DOM tree
+Modifying the DOM tree
 
 ```
 const elementToRemove = document.getElementById('to-remove');
 const parent = elementToRemove.parentNode;
 ```
 
-// Removing an element
+Removing an element
 
 ```
 parent.removeChild(elementToRemove);
 ```
 
-// Replacing an element
+Replacing an element
 
 ```
 const newElement = document.createElement('div');
@@ -212,22 +212,22 @@ parent.replaceChild(newElement, anotherDiv);
 
 Adding styles dynamically to HTML elements using JavaScript involves manipulating the style property of an HTML element.
 
-// Select the Element:
+Select the Element:
 
 `const myElement = document.getElementById("myElementId");`
 
-// Access the Style Property:
+Access the Style Property:
 
 `const elementStyle = myElement.style;`
 
-// Set Style Properties:
+Set Style Properties:
 
 ```
 elementStyle.backgroundColor = "blue";
 elementStyle.fontSize = "16px";
 ```
 
-// Add Multiple Styles at Once:
+Add Multiple Styles at Once:
 You can set multiple styles at once using the cssText property. This property takes a string of CSS styles.
 
 Example:
