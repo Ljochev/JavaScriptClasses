@@ -143,7 +143,7 @@ Appending to the body
 document.body.appendChild(paragraph);
 ```
 
-Here, we create a new <p> (paragraph) element, set its content and attributes, and then append it to the body of the document. This technique is invaluable for generating content dynamically based on user interactions or other events.
+Here, we create a new paragraph element, set its content and attributes, and then append it to the body of the document. This technique is invaluable for generating content dynamically based on user interactions or other events.
 
 2. **Adding Elements to the DOM (appendChild, insertBefore, innerHTML)**
 
