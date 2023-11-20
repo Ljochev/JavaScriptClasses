@@ -40,3 +40,12 @@ child.addEventListener("click", (event) => {
   event.stopPropagation()
   console.log("you clicked the CHILD element")
 })
+
+const submitButton = document.getElementById("submitButton")
+
+submitButton.addEventListener("click", () => {
+  const inputElement = document.getElementById("myInput")
+  const inputValue = inputElement.value
+
+  alert(`Hello ${inputValue}`)
+})
