@@ -3,6 +3,7 @@
 In JavaScript, event listeners allow you to respond to user interactions like clicks, keystrokes, and more. They are crucial for creating interactive and dynamic web pages.
 
 **How to work with them?**
+
 First, select the HTML element you want to attach an event listener to. You can do this using various DOM methods like: getElementById, getElementsByClassName, querySelector, etc.
 
 Next, use the addEventListener method on the selected element. This method takes two arguments: the event type and a function (the event handler) to be executed when the event occurs.
@@ -94,9 +95,11 @@ The stopPropagation method is used to stop the propagation of an event through t
 
 **How it works:**
 
-**Event Bubbling:** When an event occurs on an element, it "bubbles up" through its ancestor elements, triggering event listeners on each one.
+**Event Bubbling:**
 
-Event Handling
+When an event occurs on an element, it "bubbles up" through its ancestor elements, triggering event listeners on each one.
+
+**Event Handling**
 If you want to prevent an event from reaching parent elements, you can use stopPropagation.
 
 Example
@@ -127,9 +130,12 @@ childElement.addEventListener("click", (e) => {
 Input fields in HTML allow users to enter various types of data, such as text, numbers, and more. To access and retrieve the data entered by a user, you can use JavaScript.
 
 **How it works:**
+
 Accessing Input Elements: Use the getElementById or querySelector methods to get a reference to the input element.
 
-Retrieving Value: To retrieve the value entered by the user, you can use the value property of the input element.
+**Retrieving Value:**
+
+To retrieve the value entered by the user, you can use the value property of the input element.
 
 Example:
 
