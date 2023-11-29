@@ -1,0 +1,89 @@
+<!-- EXERCISE 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz</title>
+  </head>
+  <body>
+    <div id="quiz-container">
+      <!-- Quiz content will go here -->
+    </div>
+
+    <script>
+      // Quiz data
+      const quizData = [
+        {
+          question: "What is the capital of France?",
+          options: ["Berlin", "Madrid", "Paris", "Rome"],
+          correctAnswer: "Paris",
+        },
+        {
+          question: "Which planet is known as the Red Planet?",
+          options: ["Earth", "Mars", "Jupiter", "Venus"],
+          correctAnswer: "Mars",
+        },
+        {
+          question: "What is the largest mammal on Earth?",
+          options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+          correctAnswer: "Blue Whale",
+        },
+        {
+          question: "In which year did the Titanic sink?",
+          options: ["1905", "1912", "1920", "1931"],
+          correctAnswer: "1912",
+        },
+        {
+          question: "Who wrote 'Romeo and Juliet'?",
+          options: [
+            "Charles Dickens",
+            "Jane Austen",
+            "William Shakespeare",
+            "Mark Twain",
+          ],
+          correctAnswer: "William Shakespeare",
+        },
+      ]
+
+      // Function to generate the quiz HTML
+      function generateQuiz() {
+        const quizContainer = document.getElementById("quiz-container")
+
+        // Iterate through each question in the quiz data
+        quizData.forEach((questionData, index) => {
+          const questionElement = document.createElement("div")
+          questionElement.classList.add("question")
+
+          // Display the question
+          questionElement.innerHTML = `<p>${index + 1}. ${
+            questionData.question
+          }</p>`
+
+          // Display multiple-choice options
+          questionData.options.forEach((option, optionIndex) => {
+            const optionElement = document.createElement("input")
+            optionElement.type = "radio"
+            optionElement.name = `q${index}`
+            optionElement.value = option
+            optionElement.id = `q${index}o${optionIndex}`
+
+            const labelElement = document.createElement("label")
+            labelElement.htmlFor = `q${index}o${optionIndex}`
+            labelElement.textContent = option
+
+            questionElement.appendChild(optionElement)
+            questionElement.appendChild(labelElement)
+          })
+
+          // Append the question to the quiz container
+          quizContainer.appendChild(questionElement)
+        })
+      }
+
+      // Generate the quiz when the page loads
+      generateQuiz()
+    </script>
+  </body>
+</html>
