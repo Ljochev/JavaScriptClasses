@@ -1,3 +1,5 @@
+// ========= Working with APIs ==========
+
 // JSON
 
 // Example
@@ -21,6 +23,8 @@ const jsonString = JSON.stringify(userData)
 // JSON.parse()
 const parsedData = JSON.parse(jsonString)
 // console.log(parsedData)
+
+// FETCH Method
 
 // GET Method with fetch using .then/.catch
 function fetchUsers() {
