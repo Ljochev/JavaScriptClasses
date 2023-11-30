@@ -15,6 +15,32 @@ RESTful APIs adhere to the principles of REST (Representational State Transfer) 
 - PUT: Update data on a server.
 - DELETE: Remove data from a server.
 
+**Status Codes**
+
+Status codes are three-digit numbers returned by a server in response to a client's request made to the server. These codes provide information about the outcome of the request, indicating success, failure, or other specific conditions. The status codes are grouped into different classes, each representing a distinct category of response.
+
+Here are the common classes of HTTP status codes:
+
+1. 1xx (Informational): Request received, continuing process.
+
+Example: 100 Continue.
+
+2. 2xx (Success): The action was successfully received, understood, and accepted.
+
+Example: 200 OK (Standard response for successful HTTP requests).
+
+3. 3xx (Redirection): Further action needs to be taken to complete the request.
+
+Example: 301 Moved Permanently (Requested resource has been permanently moved).
+
+4. 4xx (Client Error): The request contains bad syntax or cannot be fulfilled.
+
+Example: 404 Not Found (The requested resource could not be found).
+
+5. 5xx (Server Error): The server failed to fulfill a valid request.
+
+Example: 500 Internal Server Error (A generic error message returned when an unexpected condition was encountered).
+
 ## JSON (JavaScript Object Notation):
 
 JSON is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is often used to transmit data between a server and a web application, making it a popular choice in API responses.
