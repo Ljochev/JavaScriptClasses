@@ -21,25 +21,20 @@ Status codes are three-digit numbers returned by a server in response to a clien
 
 Here are the common classes of HTTP status codes:
 
-1. 1xx (Informational): Request received, continuing process.
+1. **1xx (Informational):** Request received, continuing process.
+   Example: 100 Continue.
 
-Example: 100 Continue.
+2. **2xx (Success):** The action was successfully received, understood, and accepted.
+   Example: 200 OK (Standard response for successful HTTP requests).
 
-2. 2xx (Success): The action was successfully received, understood, and accepted.
+3. **3xx (Redirection):** Further action needs to be taken to complete the request.
+   Example: 301 Moved Permanently (Requested resource has been permanently moved).
 
-Example: 200 OK (Standard response for successful HTTP requests).
+4. **4xx (Client Error):** The request contains bad syntax or cannot be fulfilled.
+   Example: 404 Not Found (The requested resource could not be found).
 
-3. 3xx (Redirection): Further action needs to be taken to complete the request.
-
-Example: 301 Moved Permanently (Requested resource has been permanently moved).
-
-4. 4xx (Client Error): The request contains bad syntax or cannot be fulfilled.
-
-Example: 404 Not Found (The requested resource could not be found).
-
-5. 5xx (Server Error): The server failed to fulfill a valid request.
-
-Example: 500 Internal Server Error (A generic error message returned when an unexpected condition was encountered).
+5. **5xx (Server Error):** The server failed to fulfill a valid request.
+   Example: 500 Internal Server Error (A generic error message returned when an unexpected condition was encountered).
 
 ## JSON (JavaScript Object Notation):
 
