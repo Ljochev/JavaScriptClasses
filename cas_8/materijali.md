@@ -2,6 +2,8 @@
 
 APIs, or Application Programming Interfaces, serve as the conduit for communication between our applications and remote servers, offering a standardized way to access functionalities and exchange information often over the internet.
 
+![Alt Text](https://voyager.postman.com/illustration/diagram-what-is-an-api-postman-illustration.svg "API Example")
+
 ## RESTful APIs and HTTP Methods:
 
 RESTful APIs adhere to the principles of REST (Representational State Transfer) architecture, using standard HTTP methods for communication.
