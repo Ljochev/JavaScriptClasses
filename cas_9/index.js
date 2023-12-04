@@ -78,7 +78,7 @@ class Student extends Person {
   }
 }
 
-//Instances
+// Instances
 const newPerson = new Person("Martin", 30)
 const professor = new Professor("Dr. Smith", 45, "Computer Science")
 const student = new Student("John", 20, "Programming in Java")
@@ -86,3 +86,51 @@ const student = new Student("John", 20, "Programming in Java")
 professor.introduce()
 student.introduce()
 student.study()
+
+// Static members, setters, getters and private variables
+class Circle {
+  // Static property
+  static PI = 3.14
+
+  // Private property
+  #radius
+
+  constructor(radius) {
+    this.#radius = radius
+  }
+
+  // Getter for radius
+  get getRadius() {
+    return this.#radius
+  }
+
+  set setRadius(newRadius) {
+    if (newRadius > 0) {
+      this.#radius = newRadius
+    } else {
+      console.log("Radius must be a positive number!")
+    }
+  }
+
+  // method
+  calculateArea() {
+    return Circle.PI * this.#radius ** 2
+  }
+
+  static createUnitCircle() {
+    return new Circle(22)
+  }
+}
+
+const circleOne = new Circle(30)
+console.log(circleOne.getRadius)
+
+circleOne.setRadius = 20 // changing the value of the radius
+console.log(circleOne.getRadius)
+
+console.log(Circle.PI) // accessing static property
+
+const circleTwo = new Circle(10)
+console.log(circleTwo.calculateArea())
+
+const unitCircle = Circle.createUnitCircle()
