@@ -1,0 +1,87 @@
+<!-- EXERCISE 3 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 98vh;
+        transition: background-color 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .quote-container {
+        max-width: 600px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        font-family: sans-serif;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+      }
+    </style>
+    <title>Random Quote</title>
+  </head>
+  <body>
+    <div class="quote-container">
+      <blockquote id="quote"></blockquote>
+    </div>
+
+    <script>
+      // Array of random colors
+      const colors = [
+        "#3498db",
+        "#e74c3c",
+        "#2ecc71",
+        "#f39c12",
+        "#9b59b6",
+        "#1abc9c",
+      ]
+
+      // Function to get a random color from the array
+      function getRandomColor() {
+        return colors[Math.floor(Math.random() * colors.length)]
+      }
+
+      // Function to fetch a random quote from the API
+      async function fetchRandomQuote() {
+        try {
+          const response = await fetch("https://api.quotable.io/quotes/random")
+          const data = await response.json()
+
+          // Return the first quote content from the array
+          return data.length > 0 ? data[0].content : "No quotes available."
+        } catch (error) {
+          console.error("Error fetching quote:", error)
+          return "An error occurred while fetching the quote."
+        }
+      }
+
+      // Function to update the quote and background color
+      async function updateQuote() {
+        const quoteElement = document.getElementById("quote")
+        const randomColor = getRandomColor()
+
+        // Fetch a random quote
+        const quote = await fetchRandomQuote()
+
+        // Update the quote text
+        quoteElement.textContent = quote
+
+        // Change the background color
+        document.body.style.backgroundColor = randomColor
+      }
+
+      // Initial update
+      updateQuote()
+
+      // Set interval to update the quote and background color every 5 seconds
+      setInterval(updateQuote, 5000)
+    </script>
+  </body>
+</html>
