@@ -2,7 +2,7 @@
 
 Hello and welcome to the Basics of JavaScript course! I am excited to have you join us on this journey
 into the world of JavaScript programming. In this course, you'll learn the fundamental concepts and
-techniques needed to get started with JavaScript. You can check the agenda here: [Agenda]: (Agenda.md)
+techniques needed to get started with JavaScript. You can check the agenda here: [Agenda]: (https://github.com/Nihil96/osnovi_na_JavaScript/blob/main/Agenda.md)
 
 ## About this Repository
 
