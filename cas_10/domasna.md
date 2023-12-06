@@ -50,16 +50,14 @@
 
 Во продолжение ви се дадени низа од бои и еден API endpoint koj што при секој повик, враќа различен цитат од познати историски личности:
 
-- Бои:
-
-const colors = [
-"#3498db",
-"#e74c3c",
-"#2ecc71",
-"#f39c12",
-"#9b59b6",
-"#1abc9c",
-]
+- Бои: const colors = [
+  "#3498db",
+  "#e74c3c",
+  "#2ecc71",
+  "#f39c12",
+  "#9b59b6",
+  "#1abc9c",
+  ]
 
 - API endpoint: https://api.quotable.io/quotes/random
 
