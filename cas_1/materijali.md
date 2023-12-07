@@ -22,11 +22,40 @@ JavaScript is a versatile programming language primarily used for adding interac
 
 - Prototype-Based Object-Oriented: JavaScript is object-oriented, but it uses a prototype-based model rather than a classical one.
 
+## Console and Alert
+
+console.log is a method used to log messages to the console, which is a developer tool available in most web browsers. The argument passed to console.log is the message you want to log. In the example below, it's the string "Hello World!". When you run this code, "Hello World!" will be printed to the console, and you can see this output in the browser's developer tools (usually by pressing F12 and navigating to the "Console" tab).
+
+Example:
+
 ```
-console and alert in JS
 console.log(“Hello World!”)
-alert(“Hey there!”)
 ```
+
+In a Node.js environment, you can use the console.log function in a similar way as you would in a browser environment.
+
+Example:
+
+1. Create a file named index.js with the following content:
+
+```
+// index.js
+
+console.log("Hello World!");
+```
+
+2. Run the code using Node.js:
+
+- Open your terminal.
+- Navigate to the directory where index.js is located.
+- Run the following command:
+
+```
+node index.js
+```
+
+The console.log("Hello World!"); statement logs the message "Hello World!" to the console.
+In a Node.js environment, when you run node index.js, it executes the JavaScript file (index.js) using Node.js, and the output will be displayed in the terminal.
 
 ## Data types
 
@@ -34,31 +63,31 @@ In JavaScript, data types define the kind of values a variable can hold. They pl
 
 ### Primitive Data Types:
 
-Number: Represents both integer and floating-point numbers. Examples: 5, 3.14.
+**Number:** Represents both integer and floating-point numbers. Examples: 5, 3.14.
 
-String: Represents text. Enclose strings in single (') or double (") quotes. Examples: 'Hello', "JavaScript".
+**String:** Represents text. Enclose strings in single (') or double (") quotes. Examples: 'Hello', "JavaScript".
 
-Boolean: Represents a true or false value. Examples: true, false.
+**Boolean:** Represents a true or false value. Examples: true, false.
 
-Undefined: Represents a variable that has been declared but hasn't been assigned a value. Example: let name;.
+**Undefined:** Represents a variable that has been declared but hasn't been assigned a value. Example: let name;.
 
-Null: Represents the absence of any value or object. It's often used to intentionally indicate that a variable has no value.
+**Null:** Represents the absence of any value or object. It's often used to intentionally indicate that a variable has no value.
 
-Symbol (ES6): Unique and immutable values, often used as object keys.
+**Symbol (ES6):** Unique and immutable values, often used as object keys.
 
-BigInt (ES11): Represents large integers that cannot be represented by the Number type.
+**BigInt (ES11):** Represents large integers that cannot be represented by the Number type.
 
 ### Reference Data Types:
 
-- Object: A complex data type that can hold collections of key-value pairs, functions, and more complex structures.
+**Object:** A complex data type that can hold collections of key-value pairs, functions, and more complex structures.
 
-- Array: A special type of object used to store lists of items. Arrays are ordered and can hold any data type.
+**Array:** A special type of object used to store lists of items. Arrays are ordered and can hold any data type.
 
-- Function: A reusable block of code that performs a specific task or calculates a value.
+**Function:** A reusable block of code that performs a specific task or calculates a value.
 
 ### Variables and Constants in JavaScript
 
-- Variables:
+**Variables:**
 
 Variables are like containers that store data in a program. They allow us to assign names to values, making it easier to work with and manipulate data.
 
@@ -70,7 +99,7 @@ Here, age is the variable name, and 30 is the value stored in the variable. You 
 
 `age = 31; // Now 'age' is 31`
 
-- Constants:
+**Constants:**
 
 Constants are similar to variables, but once you assign a value to a constant, you can't reassign it. They are used for values that should not change throughout the program.
 
@@ -82,13 +111,13 @@ Once you've assigned a value to PI, you can't change it:
 
 `PI = 3.14159; // Error! You can't reassign a constant.`
 
-Choosing Between Variables and Constants:
+**Choosing Between Variables and Constants:**
 
 Use a variable when you expect the value to change during the execution of your program. Use a constant when you want to ensure a value remains fixed.
 
 ### var, let, and const: Understanding Scope in JavaScript
 
-- var:
+**var:**
 
 var is the oldest way to declare variables in JavaScript.
 It has function scope, which means it is visible throughout the entire function in which it's defined, regardless of block scope. If you declare a variable with var inside a block (like an if statement or loop), it will still be visible outside of that block.
@@ -104,7 +133,7 @@ console.log(name); // Output: "John"
 }
 ```
 
-- let:
+**let:**
 
 let was introduced in ES6 (ECMAScript 2015) to address some of the issues with var.
 It has block scope, which means it is only visible within the block it's defined in (like an if statement or loop). Using let helps prevent issues caused by variable hoisting (a behavior of var that can lead to unexpected results).
@@ -120,7 +149,7 @@ console.log(name); // Error: name is not defined
 }
 ```
 
-- const:
+**const:**
 
 const is also introduced in ES6 and is used to declare constants.
 Like let, it also has block scope. A constant cannot be reassigned once it's defined. However, if it's an object or array, the properties or elements can still be modified.
@@ -135,25 +164,51 @@ const person = { name: "John" };
 person.name = "Jane"; // This is allowed.
 ```
 
-When to Use:
+**When to Use:**
 
 Use const when the value should not be changed.
 Use let when you need to reassign the variable.
 Minimize the use of var as it may lead to unintended issues due to its function scope and variable hoisting behavior.
 
-- Best Practices:
-  Use const by default, and switch to let only if you know the value will change.
-  Avoid using var unless working with older code or environments that don't support ES6.
+**Best Practices:** Use const by default, and switch to let only if you know the value will change. Avoid using var unless working with older code or environments that don't support ES6.
 
-- Mathematical operations: +, -, \*, /, +=, -=, ==, ===
+## Mathematical operations
+
+JavaScript provides a set of built-in operators for performing various mathematical operations. These operators allow you to perform addition, subtraction, multiplication, division, and more on numerical values. Here are some common mathematical operators in JavaScript:
+
+```
+// Addition (+):
+let sum = 5 + 3; // Result: 8
+
+// Subtraction (-):
+let difference = 10 - 4; // Result: 6
+
+// Multiplication (*):
+let product = 2 * 6; // Result: 12
+
+// Division (/):
+let quotient = 16 / 4; // Result: 4
+
+// Modulus (%):
+let remainder = 15 % 4; // Result: 3 (remainder of the division)
+
+// Exponentiation (**):
+let result = 2 ** 3; // Result: 8 (2 raised to the power of 3)
+```
+
+JavaScript also provides the **Math** object, which contains a variety of mathematical functions for more advanced operations. For instance, you can use Math.sqrt() for square root, Math.sin() for sine, and so on.
+
+```
+let squareRoot = Math.sqrt(25); // Result: 5
+```
 
 ### Boolean Algebra in JavaScript:
 
 Boolean algebra in JavaScript involves working with logical values true and false. These values are used to control the flow of a program based on conditions.
 
-- Logical Operators:
+**Logical Operators:**
 
-- && (Logical AND): This operator returns true if both operands are true.
+**&&** (Logical AND): This operator returns true if both operands are true.
 
 Example:
 
@@ -163,7 +218,7 @@ let y = false;
 let result = x && y; // result will be false
 ```
 
-- || (Logical OR): This operator returns true if at least one of the operands is true.
+**||** (Logical OR): This operator returns true if at least one of the operands is true.
 
 Example:
 
@@ -173,7 +228,7 @@ let y = false;
 let result = x || y; // result will be true
 ```
 
-- ! (Logical NOT): This operator returns the opposite of the given boolean value.
+**!** (Logical NOT): This operator returns the opposite of the given boolean value.
 
 Example
 
@@ -184,7 +239,7 @@ let result = !x; // result will be false
 
 Comparison Operators:
 
-- == (Equal to): Checks if two values are equal.
+**==** (Equal to): Checks if two values are equal.
 
 Example:
 
@@ -194,7 +249,7 @@ let y = 5;
 let result = x == y; // result will be true
 ```
 
-- != (Not equal to): Checks if two values are not equal.
+**!=** (Not equal to): Checks if two values are not equal.
 
 Example:
 
@@ -204,7 +259,7 @@ let y = 10;
 let result = x != y; // result will be true
 ```
 
-- > (Greater than), < (Less than), >= (Greater than or equal to), <= (Less than or equal to): These operators are used for numerical comparisons.
+**>** (Greater than), < (Less than), >= (Greater than or equal to), <= (Less than or equal to): These operators are used for numerical comparisons.
 
 Example:
 
@@ -240,7 +295,7 @@ Comparison Operators in JavaScript: == vs ===
 
 In JavaScript, the comparison operators == and === are used to compare values. However, they have different behaviors:
 
-- == (Equal Operator):
+**==** (Equal Operator):
 
 The == operator checks if two values are equal after converting them to a common type.
 It performs type coercion, which means it tries to make both values of the same type before comparing.
@@ -255,7 +310,7 @@ console.log(x == y); // true
 
 In this example, x and y are considered equal because the == operator performs type coercion and converts the string "5" to a number before comparison.
 
-- === (Strict Equal Operator):
+**===** (Strict Equal Operator):
 
 The === operator checks if two values are equal without performing type coercion. It compares both the value and the data type, ensuring that both are identical.
 
@@ -269,7 +324,7 @@ console.log(x === y); // false
 
 In this example, x and y are considered not equal because the === operator doesn't perform type coercion and the data types are different.
 
-- When to Use Each:
+**When to Use Each:**
 
 Use == when you want to check if two values are equal regardless of their data types, and you're aware that type coercion might occur.
 
@@ -284,7 +339,7 @@ The typeof operator in JavaScript
 
 The typeof operator is a built-in JavaScript keyword that allows you to determine the data type of a value or expression. It returns a string indicating the type of the operand.
 
-- Usage:
+**Usage:**
 
 The basic syntax of the typeof operator is: typeof operand
 It takes one operand (value or expression) and returns a string representing its type.
