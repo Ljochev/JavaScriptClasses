@@ -2,9 +2,9 @@
 
 Conditions in JavaScript allow you to control the flow of your program based on certain criteria. They enable your program to make decisions and execute different code blocks depending on whether a condition is true or false.
 
-### 1. if Statement:
+### if Statement:
 
-The if statement executes a block of code if a specified condition is true.
+1. The if statement executes a block of code if a specified condition is true.
 
 Example:
 
