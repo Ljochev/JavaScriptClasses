@@ -10,10 +10,10 @@ RESTful APIs adhere to the principles of REST (Representational State Transfer) 
 
 **Common HTTP methods:**
 
-- GET: Retrieve data from a server.
-- POST: Send data to a server to create a new resource.
-- PUT: Update data on a server.
-- DELETE: Remove data from a server.
+- **GET:** Retrieve data from a server.
+- **POST:** Send data to a server to create a new resource.
+- **PUT:** Update data on a server.
+- **DELETE:** Remove data from a server.
 
 **Status Codes**
 
