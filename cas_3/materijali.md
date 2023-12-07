@@ -30,7 +30,7 @@ Arrays are ordered lists of values. Each value is called an element, and it can 
 
 ### Basic Array Methods
 
-- push() - Adds one or more elements to the end of an array and returns the new length of the array.
+**push()** - Adds one or more elements to the end of an array and returns the new length of the array.
 
 Example:
 
@@ -40,7 +40,7 @@ fruits.push('cherry');
 // Result: fruits = ['apple', 'banana', 'cherry']
 ```
 
-- pop() - Removes the last element from an array and returns that element.
+**pop()** - Removes the last element from an array and returns that element.
 
 Example:
 
@@ -50,7 +50,7 @@ let removedFruit = fruits.pop();
 // Result: removedFruit = 'cherry', fruits = ['apple', 'banana']
 ```
 
-- shift() - Removes the first element from an array and returns that element.
+**shift()** - Removes the first element from an array and returns that element.
 
 Example:
 
@@ -60,7 +60,7 @@ let removedFruit = fruits.shift();
 // Result: removedFruit = 'apple', fruits = ['banana', 'cherry']
 ```
 
-- unshift() - Adds one or more elements to the beginning of an array and returns the new length of the array.
+**unshift()** - Adds one or more elements to the beginning of an array and returns the new length of the array.
 
 Example:
 
@@ -70,7 +70,7 @@ fruits.unshift('apple');
 // Result: fruits = ['apple', 'banana', 'cherry']
 ```
 
-- slice() - Returns a shallow copy of a portion of an array into a new array object.
+**slice()** - Returns a shallow copy of a portion of an array into a new array object.
 
 Example:
 
@@ -80,7 +80,7 @@ let selectedFruits = fruits.slice(1, 3);
 // Result: selectedFruits = ['banana', 'cherry']
 ```
 
-- splice() - Changes the contents of an array by removing, replacing, or adding elements.
+**splice()** - Changes the contents of an array by removing, replacing, or adding elements.
 
 Example:
 
@@ -90,7 +90,7 @@ fruits.splice(1, 2, 'orange', 'grape');
 // Result: fruits = ['apple', 'orange', 'grape', 'date']
 ```
 
-- concat() - Combines two or more arrays and returns a new array.
+**concat()** - Combines two or more arrays and returns a new array.
 
 Example:
 
@@ -101,7 +101,7 @@ let allFruits = fruits1.concat(fruits2);
 // Result: allFruits = ['apple', 'banana', 'cherry', 'date']
 ```
 
-- reverse() - Reverses the order of the elements in an array.
+**reverse()** - Reverses the order of the elements in an array.
 
 Example:
 
@@ -306,5 +306,26 @@ if (i === 5) {
 break; // Exit the loop when i reaches 5
 }
 i++;
+}
+```
+
+### Using Continue Statement:
+
+The continue statement is used within a loop to skip the rest of the code inside the loop for the current iteration and move on to the next iteration.
+
+Example:
+
+```
+let i = 0;
+
+while (i < 5) {
+  i++;
+
+  // Skip the rest of the loop for odd numbers
+  if (i % 2 !== 0) {
+    continue;
+  }
+
+  console.log("Even number:", i);
 }
 ```
