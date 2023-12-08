@@ -1,14 +1,16 @@
-# Welcome to Basics of JavaScript!
+# Semos - JavaScript Basics
 
 <sub>Authored by: Hristijan Kostadinoski, JavaScript Engineer</sub>
 
-Hello and welcome to the Basics of JavaScript course! I am excited to have you join us on this journey
-into the world of JavaScript programming. In this course, you'll learn the fundamental concepts and
+## Welcome to Basics of JavaScript!
+
+Hello and welcome to the Basics of JavaScript module! I am excited to have you join us on this journey
+into the world of JavaScript programming. In this module, you'll learn the fundamental concepts and
 techniques needed to get started with JavaScript. You can check the agenda [here](https://github.com/Nihil96/osnovi_na_JavaScript/blob/main/Agenda.md)
 
 ## About this Repository
 
-This repository contains resources, exercises, and code examples that will complement the course
+This repository contains resources, exercises, code examples and homeworks that will complement the course
 material. We encourage you to explore the content, try out the exercises, and experiment with the
 provided code.
 
