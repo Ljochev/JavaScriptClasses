@@ -2,7 +2,7 @@
 
 Object-oriented programming (OOP) in JavaScript is a programming paradigm that revolves around the concept of objects, which are instances of classes defining a blueprint for their structure and behavior. JavaScript, while primarily a prototype-based language, incorporates key OOP principles.
 
-**Objects and Classes:** JavaScript allows the creation of objects directly, and ES6 introduced the class syntax, providing a more familiar way to define and instantiate obje cts.
+**Objects and Classes:** JavaScript allows the creation of objects directly, and ES6 introduced the class syntax, providing a more familiar way to define and instantiate objects.
 
 **Encapsulation:** Objects encapsulate data and methods, bundling them together to control access and prevent unintended modifications. This helps in organizing and structuring code.
 
