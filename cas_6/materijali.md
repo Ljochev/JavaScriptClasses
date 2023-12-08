@@ -239,26 +239,27 @@ The **classList** property in JavaScript provides an interface to interact with 
 Here are some common methods associated with the classList property:
 
 ```
-    // Adds one or more classes to the element.
-    const element = document.getElementById("myElement")
-    element.classList.add("newClass", "anotherClass")
+// Adds one or more classes to the element.
+const element = document.getElementById("myElement")
+element.classList.add("newClass", "anotherClass")
 ```
 
 ```
-    // Removes one or more classes from the element.
-    const element = document.getElementById("myElement")
-    element.classList.remove("oldClass", "unwantedClass")
+// Removes one or more classes from the element.
+const element = document.getElementById("myElement")
+element.classList.remove("oldClass", "unwantedClass")
 ```
 
 ```
-    // Toggles a class on/off. If the class exists, it removes it; otherwise, it adds it.
-    // The second parameter (force) is optional. If force is true, the class will be added; if false, it will be removed.
-    const element = document.getElementById("myElement")
-    element.classList.toggle("active")
+// Toggles a class on/off. If the class exists, it removes it; otherwise, it adds it.
+// The second parameter (force) is optional. If force is true, the
+// class will be added; if false, iwill be removed.
+const element = document.getElementById("myElement")
+element.classList.toggle("active")
 ```
 
 ```
-    // Replaces one class with another.
-    const element = document.getElementById('myElement');
-    element.classList.replace('oldClass', 'newClass');
+// Replaces one class with another.
+const element = document.getElementById('myElement');
+element.classList.replace('oldClass', 'newClass');
 ```
