@@ -233,3 +233,32 @@ You can set multiple styles at once using the cssText property. This property ta
 Example:
 
 `myElement.style.cssText = "color: red; font-size: 18px; margin-top: 10px;";`
+
+The **classList** property in JavaScript provides an interface to interact with the classes of an HTML element. It's particularly useful for adding, removing, or toggling CSS classes dynamically through JavaScript.
+
+Here are some common methods associated with the classList property:
+
+```
+    // Adds one or more classes to the element.
+    const element = document.getElementById("myElement")
+    element.classList.add("newClass", "anotherClass")
+```
+
+```
+    // Removes one or more classes from the element.
+    const element = document.getElementById("myElement")
+    element.classList.remove("oldClass", "unwantedClass")
+```
+
+```
+    // Toggles a class on/off. If the class exists, it removes it; otherwise, it adds it.
+    // The second parameter (force) is optional. If force is true, the class will be added; if false, it will be removed.
+    const element = document.getElementById("myElement")
+    element.classList.toggle("active")
+```
+
+```
+    // Replaces one class with another.
+    const element = document.getElementById('myElement');
+    element.classList.replace('oldClass', 'newClass');
+```

@@ -73,5 +73,12 @@
     const elementToRemove = document.getElementById("important-paragraph")
     const parentElement = elementToRemove.parentNode
     parentElement.removeChild(elementToRemove)
+
+    // Checks if the element has a specific class.
+    // Returns true if the class is present; otherwise, returns false.
+    const element = document.getElementById("myElement")
+    if (element.classList.contains("highlight")) {
+      // Do something if the class is present
+    }
   </script>
 </html>
