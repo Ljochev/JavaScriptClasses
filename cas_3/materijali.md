@@ -196,7 +196,6 @@ console.log(person['isStudent']); // Output: false
 
 ```
 
-Summary:
 Arrays and objects are both complex data types in JavaScript.
 Arrays are ordered lists of values, and objects are collections of key-value pairs.
 Arrays use numeric indices to access elements, while objects use keys to access properties.
