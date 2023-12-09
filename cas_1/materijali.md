@@ -22,7 +22,7 @@ JavaScript is a versatile programming language primarily used for adding interac
 
 - Prototype-Based Object-Oriented: JavaScript is object-oriented, but it uses a prototype-based model rather than a classical one.
 
-## Console and Alert
+## Console
 
 console.log is a method used to log messages to the console, which is a developer tool available in most web browsers. The argument passed to console.log is the message you want to log. In the example below, it's the string "Hello World!". When you run this code, "Hello World!" will be printed to the console, and you can see this output in the browser's developer tools (usually by pressing F12 and navigating to the "Console" tab).
 
